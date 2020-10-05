@@ -100,14 +100,16 @@ API предназначет только для использования ав
 На вашей локальной машине должен быть установлен Docker
 1. Склонировать репозиторий к себе на локальную машину
 2. В корневой директории проекта файл .env и прописать, в нем следующее:
-`DB_ENGINE=django.db.backends.postgresql
-DB_NAME=postgres
-DB_USER=postgres
-DB_PASSWORD=postgres 
-DB_HOST=db
-DB_PORT=5432
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=postgres`
+
+    DB_ENGINE=django.db.backends.postgresql
+    DB_NAME=postgres
+    DB_USER=postgres
+    DB_PASSWORD=postgres 
+    DB_HOST=db
+    DB_PORT=5432
+    POSTGRES_USER=postgres
+    POSTGRES_PASSWORD=postgres
+    
 3. Далее в теоминале выполнить команду `docker-compose up`.
 4. Когда контейнер запустится, выполнить команду `docker stats` и узнать id контейнера, название которого заканчивается на web
 5. Подключиться к контейнеру командой docker exec -it <id контейнера> bash
